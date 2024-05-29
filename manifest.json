@@ -2,7 +2,7 @@
     "name": "Lab8-Starter",
     "short_name": "Guan Huang Chen",
     "description": "Lab8 PWA",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display": "fullscreen",
     "background_color": "white",
     "theme_color": "white",
