@@ -108,19 +108,18 @@ async function getRecipes() {
   // A8. TODO - Add the new recipe to the recipes array
   recipesArray.push(recipe);
     if(recipesArray.length === RECIPE_URLS.length){
+      // A9. TODO - Check to see if you have finished retrieving all of the recipes,
+  //            if you have, then save the recipes to storage using the function
+  //            we have provided. Then, pass the recipes array to the Promise's
+  //            resolve() method.
       saveRecipesToStorage(recipesArray);
       resolve(recipesArray);
     }
     }catch(error){
+      // A10. TODO - Log any errors from catch using console.error
       console.error(error);
+      // A11. TODO - Pass any errors to the Promise's reject() function
       reject(error);
-  // A9. TODO - Check to see if you have finished retrieving all of the recipes,
-  //            if you have, then save the recipes to storage using the function
-  //            we have provided. Then, pass the recipes array to the Promise's
-  //            resolve() method.
-  // A10. TODO - Log any errors from catch using console.error
-  
-  // A11. TODO - Pass any errors to the Promise's reject() function
     }
   });
   });
